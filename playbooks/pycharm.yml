@@ -1,0 +1,5 @@
+- name: install pycharm
+  hosts: localhost
+  roles:
+    - pycharm
+  become: true

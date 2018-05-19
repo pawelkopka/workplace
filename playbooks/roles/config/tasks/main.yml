@@ -1,0 +1,46 @@
+# from https://github.com/Oefenweb/ansible-pycharm/
+---
+- name: create config directory
+  file:
+    path: "{{ user_config }}"
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+  register: config
+  tags:
+    - config
+
+- name: create aliases file
+  file:
+    path: "{{ user_config }}/aliases.sh"
+    state: touch
+    owner: root
+    group: root
+    mode: 0755
+  register: aliases
+  tags:
+    - aliases
+
+- name: check aliases in bashrc user
+  shell: "grep '^source {{ user_config }}/aliases.sh' {{ home_path }}/.bashrc | cat"
+  register: grep_aliases_user
+
+- name: add aliases to bashrc user
+  lineinfile:
+    path: "{{ home_path }}/.bashrc"
+    line: "source {{ user_config }}/aliases.sh"
+    state: present
+  when: grep_aliases_user.stdout == ""
+
+- name: check aliases in bashrc root
+  shell: "grep '^source {{ user_config }}/aliases.sh' /root/.bashrc | cat"
+  register: grep_aliases_root
+
+- name: add aliases to bashrc root
+  lineinfile:
+    path: "/root/.bashrc"
+    line: "source {{ user_config }}/aliases.sh"
+    state: present
+  when: grep_aliases_root.stdout == ""
+

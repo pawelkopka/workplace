@@ -1,0 +1,9 @@
+all:
+  hosts:
+    localhost:
+      ansible_connection: local
+
+  vars:
+    username: kepok
+    home_path: "/home/{{ username }}"
+    user_config: "{{ home_path }}/.config/{{ username}}_config"
