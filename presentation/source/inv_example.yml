@@ -1,0 +1,13 @@
+all:
+  hosts:
+    mail.example.com:
+  children:
+    webservers:
+      hosts:
+        foo.example.com:
+        34.13.15.257"
+    dbservers:
+      hosts:
+        one.example.com:
+        two.example.com:
+        34.13.15.257:
