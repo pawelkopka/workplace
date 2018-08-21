@@ -1,8 +1,3 @@
-.. workplace documentation master file, created by
-   sphinx-quickstart on Sun Aug 12 10:26:48 2018.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Terminologia
 *************
 
@@ -23,17 +18,71 @@ Formaty:
 
 - PY (Dynamic inventory)
 
+.. literalinclude:: inv_aws.py
 
 Moduł
 ======
 
+Kody wykonywany na zdalnych maszynach.
+Na przykład:
+
+- ping
+- apt
+- template
+
+
 Task
 =====
+Pojedyńcze zadania wykonywane na zdalnej maszynie
+
+
+
+.. code-block:: yaml
+
+   - name: install python3-sphinx
+     apt:
+       name: python3-sphinx
+       state: present
+
 
 Playbook
 =========
+Orkiestracja zadań, konfiguracji oraz deploymentu.
+
+.. code-block:: yaml
+
+   - hosts: all
+     tasks:
+      - name: ensure nginx is at the latest version
+        apt:
+         name: nginx
+         state: latest
+      - name: start nginx
+        service:
+           name: nginx
+           state: started
+
+.. note::
+
+   They are called playbooks partially because it’s a sports analogy, and it’s supposed to be fun using them. They aren’t workbooks :)`doc`_
+
+.. _doc: https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html#term-library
+
 
 Role
 ======
+Jednostka z zadaniami, konfiguracją, zmiennymy itp.
+
+.. code-block:: yaml
+
+   roles/
+      common/
+        tasks/
+        handlers/
+        files/
+        templates/
+        vars/
+        defaults/
+        meta/
 
 
