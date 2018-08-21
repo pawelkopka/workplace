@@ -1,0 +1,5 @@
+- name: install and config terminal
+  hosts: localhost
+  roles:
+    - terminal
+  become: true

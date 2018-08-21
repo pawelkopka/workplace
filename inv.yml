@@ -1,8 +1,4 @@
 all:
-  hosts:
-    localhost:
-      ansible_connection: local
-
   vars:
     username: kepok
     home_path: "/home/{{ username }}"

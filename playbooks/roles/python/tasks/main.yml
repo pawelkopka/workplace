@@ -1,0 +1,7 @@
+- name: apt python packates
+  apt:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - python3-sphinx
+    - virtualenv
