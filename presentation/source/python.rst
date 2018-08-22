@@ -12,12 +12,12 @@ Marian
 -------
 
 .. image:: edu.png
-   :scale: 20 %
+   :scale: 30 %
    :alt: alternate text
    :align: right
 
 .. image:: hipis.png
-   :scale: 50 %
+   :scale: 70 %
    :alt: alternate text
    :align: right
 

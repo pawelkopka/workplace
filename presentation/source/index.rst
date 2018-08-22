@@ -13,5 +13,6 @@ Ansible w każdej kuchni
    python
    editors
    terminal
+   git
 
 

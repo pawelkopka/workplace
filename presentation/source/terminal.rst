@@ -1,18 +1,13 @@
 Terminator
 ***********************
+.. image:: Robotics_Expert.png
+   :scale: 60 %
+   :alt: alternate text
+   :align: right
 
 Marian lubi state filmy, uważa że już nikt nie robi porządnych film. A aktualna młodziesz....
 Nie też czemu jest takie  zainteresowanie AI, chyba każdy wie czy jest(będzie) skynet...
 W obawie przed skynetem kożystał z terminator, ale ostatnio przeżucił się na tmux+tmuxinator.
-
-.. image:: Robotics_Expert.png
-   :scale: 40 %
-   :alt: alternate text
-   :align: right
-
-
-
-
 
 
 Rola: Terminal
@@ -20,7 +15,7 @@ Rola: Terminal
 
 Template
 ---------
-.. literalinclude:: ../../playbooks/roles/terminal/templates/tmux.config.j2
+.. literalinclude:: ../../playbooks/roles/terminal/files/tmux.config
 
 Tasks
 ---------
@@ -51,6 +46,6 @@ Output
 
 .. note::
 
-   template pozwala na wypełnienie naszej konfuguracji zmiennymi `template`_
+   file pozwala na kopiowanie plików w dowolne miejsce, miedzy innymi konfigów `file`_
 
-.. _template: https://docs.ansible.com/ansible/latest/modules/apt_module.html
+.. _file: https://docs.ansible.com/ansible/2.5/modules/file_module.html

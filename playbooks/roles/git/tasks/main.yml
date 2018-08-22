@@ -1,0 +1,26 @@
+- name: apt git
+  apt:
+    name: "git"
+    state: present
+
+- name: install bash-git-prompt
+  git:
+    repo: https://github.com/magicmonty/bash-git-prompt.git
+    version: master
+    dest: '{{ home_path }}/.bash-git-prompt'
+
+- name: compy git-prompt config
+  file:
+    src: git-prompt-colors.sh
+    dest: '{{ home_path }}/.git-prompt-colors.sh'
+
+- name: add alias pycharm
+  lineinfile:
+    path: "{{ home_path }}/.bashrc"
+    line: "{{ item }}"
+    state: present
+  with_items:
+    - 'GIT_PROMPT_ONLY_IN_REPO=1'
+    - 'source {{ home_path }}/.bash-git-prompt/gitprompt.sh'
+    - 'GIT_PROMPT_THEME_FILE={{ home_path }}/.git-prompt-colors.sh'
+    - 'GIT_PROMPT_THEME=Custom'

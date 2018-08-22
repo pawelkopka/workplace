@@ -7,8 +7,8 @@
     - tmuxinator
 
 - name: add tmux config
-  template:
-    src: tmux.config.j2
+  file:
+    src: tmux.config
     dest: '{{ user_config }}/.tmux.conf'
 
 - name: Create symbolic link

@@ -3,3 +3,6 @@ all:
     username: kepok
     home_path: "/home/{{ username }}"
     user_config: "{{ home_path }}/.config/{{ username}}_config"
+    git_name: pawelkopka
+    git_email: pawel.kopka22@gmail.com
+
