@@ -67,12 +67,15 @@ Jak dokładnie działa ansible
 ------------------------------
 
 .. code-block:: sh
-    $ ansible -i inv_test.ini all -m command -a 'pwd ; sleep 30'
+
+   $ ansible -i inv_test.ini all -m command -a 'pwd ; sleep 30'
 
 
 Tym czasem na zadalnej maszynie
+-----------------------------------
 
 .. code-block:: sh
+
     root@ip-172-31-9-154:/tmp# ls
     ansible_r9RBDI
 
@@ -92,7 +95,6 @@ Tym czasem na zadalnej maszynie
 
     from __future__ import absolute_import, division, print_function
     __metaclass__ = type
-
 
     ANSIBLE_METADATA = {'metadata_version': '1.1',
                         'status': ['stableinterface'],

@@ -4,9 +4,6 @@ Do czego służy Ansible?
 Głównie do orkiestracji dużych deplymentów, ale też do małych.
 
 
-Przykład
-==========
-
 Mały deployment
 ----------------
 2 maszyny(web i loadbalancer)
@@ -58,4 +55,5 @@ Większy deployment
 10 maszyny(9 web i 1 loadbalancer)
 
 Inventory
+
 .. literalinclude:: inv_do2.ini
