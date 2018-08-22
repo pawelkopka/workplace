@@ -1,5 +1,5 @@
 - name: install pycharm
   hosts: localhost
   roles:
-    - pycharm
+    - editors
   become: true

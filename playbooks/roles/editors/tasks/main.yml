@@ -7,10 +7,6 @@
     owner: root
     group: root
     mode: 0755
-  tags:
-    - configuration
-    - pycharm
-    - pycharm-download
 
 - name: download
   get_url:
@@ -19,10 +15,6 @@
     owner: root
     group: root
     mode: 0644
-  tags:
-    - configuration
-    - pycharm
-    - pycharm-downloads
 
 - name: install
   unarchive:
@@ -30,13 +22,16 @@
     dest: "{{ pycharm_install_prefix }}"
     creates: "{{ pycharm_install_prefix }}/pycharm-{{ pycharm_version }}"
     copy: false
-  tags:
-    - configuration
-    - pycharm
-    - pycharm-install
 
 - name: add alias pycharm
   lineinfile:
     path: "{{ user_config }}/aliases.sh"
     line: "alias pycharm={{ pycharm_install_prefix }}/pycharm-{{ pycharm_edition }}-{{ pycharm_version }}/bin/pycharm.sh"
     state: present
+
+
+- name: install vim
+  apt:
+    name: "vim"
+    state: present
+    update_cache: yes

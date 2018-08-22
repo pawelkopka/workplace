@@ -5,3 +5,15 @@
   with_items:
     - tmux
     - tmuxinator
+
+- name: add tmux config
+  template:
+    src: tmux.config.j2
+    dest: '{{ user_config }}/.tmux.conf'
+
+- name: Create symbolic link
+  file:
+   src: '{{ user_config }}/.tmux.conf'
+   dest: '{{ home_path }}/.tmux.conf'
+   state: link
+   force: yes

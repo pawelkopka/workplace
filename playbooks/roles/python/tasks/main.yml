@@ -1,7 +1,37 @@
-- name: apt python packates
+---
+
+- name: Add latest Python
+  apt_repository:
+    repo: "ppa:jonathonf/python-{{ python_version }}"
+    state: present
+  when: ansible_distribution == 'Ubuntu' and ansible_distribution_version != '18.04'
+
+- name: install Python with dev
   apt:
     name: "{{ item }}"
     state: present
+    update_cache: yes
   with_items:
-    - python3-sphinx
-    - virtualenv
+      - "python{{ python_version }}"
+      - "python-dev"
+      - "python{{ python_version }}-dev"
+      - "python{{ python_version }}-venv"
+
+- name: install Pip
+  apt:
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+  with_items:
+      - python-pip
+      - python3-pip
+
+- name: install Venv for python3
+  apt:
+    name: "python{{ python_version }}-venv"
+    state: present
+
+- name: install Venv for python2
+  pip:
+    name: "virtualenv"
+    state: present
