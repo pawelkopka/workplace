@@ -1,4 +1,3 @@
-# from https://github.com/Oefenweb/ansible-pycharm/
 ---
 - name: create config directory
   file:
@@ -12,15 +11,9 @@
     - config
 
 - name: create aliases file
-  file:
-    path: "{{ user_config }}/aliases.sh"
-    state: touch
-    owner: root
-    group: root
-    mode: 0755
-  register: aliases
-  tags:
-    - aliases
+  copy:
+    dest: "{{ user_config }}/aliases.sh"
+    src: aliases.sh
 
 - name: check aliases in bashrc user
   shell: "grep '^source {{ user_config }}/aliases.sh' {{ home_path }}/.bashrc | cat"

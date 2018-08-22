@@ -16,7 +16,7 @@
 
 - name: add alias pycharm
   lineinfile:
-    path: "{{ home_path }}/.bashrc"
+    path: "{{ user_config }}/aliases.sh"
     line: "{{ item }}"
     state: present
   with_items:

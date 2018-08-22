@@ -11,6 +11,7 @@ Ansible w każdej kuchni
    jak_dziala
    do_czego_sluzy
    python
+   bashrc
    editors
    terminal
    git
