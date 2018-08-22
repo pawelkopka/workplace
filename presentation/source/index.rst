@@ -15,5 +15,6 @@ Ansible w każdej kuchni
    editors
    terminal
    git
+   projects
 
 

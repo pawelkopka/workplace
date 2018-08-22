@@ -5,11 +5,6 @@ Terminator
    :alt: alternate text
    :align: right
 
-.. image:: robo.png
-   :scale: 60 %
-   :alt: alternate text
-   :align: right
-
 Marian lubi state filmy, uważa że już nikt nie robi porządnych film. A aktualna młodziesz....
 Nie też czemu jest takie  zainteresowanie AI, chyba każdy wie czy jest(będzie) skynet...
 W obawie przed skynetem kożystał z terminator, ale ostatnio przeżucił się na tmux+tmuxinator.

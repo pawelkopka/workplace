@@ -1,0 +1,11 @@
+---
+- name: Ensures {{ home_path }}/projects dir exists
+  file:
+    path: '{{ home_path }}/projects'
+    state: directory
+
+- name: pull projects
+  git:
+    repo: '{{ item }}'
+    dest: '{{ home_path }}/projects/{{ item.split("/")[-1]  }}'
+  with_items: '{{ projects }}'
