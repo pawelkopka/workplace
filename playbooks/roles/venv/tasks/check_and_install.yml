@@ -1,0 +1,17 @@
+---
+- name: set project dir
+  set_fact:
+    project_dir: '{{ home_path }}/projects/{{ item.split("/")[-1] }}'
+
+- name: 'name check if req exists in {{ project_dir }}'
+  stat:
+    path: '{{ project_dir}}/requirements.txt'
+  register: req
+
+- name: 'install {{ project_dir  }}'
+  pip:
+    requirements: '{{ project_dir }}/requirements.txt'
+    virtualenv: '{{ project_dir }}/venv'
+    virtualenv_command: python3 -m venv
+  when: req.stat.exists == True
+

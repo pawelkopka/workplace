@@ -1,0 +1,4 @@
+---
+- name: check and install req
+  include: check_and_install.yml
+  with_items: '{{ projects }}'
