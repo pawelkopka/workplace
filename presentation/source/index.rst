@@ -10,5 +10,8 @@ Ansible w każdej kuchni
    terminologia
    jak_dziala
    do_czego_sluzy
+   python
+   editors
+   terminal
 
 
