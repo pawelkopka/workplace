@@ -16,5 +16,8 @@ Ansible w każdej kuchni
    terminal
    git
    projects
+   clouds
+   koniec
+   podsumowanie
 
 
