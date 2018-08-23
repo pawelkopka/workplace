@@ -6,15 +6,14 @@ Ansible
 =========
 
 - Prosty
-- Wieszchstrony
+- Wiszechstrony
 - Bezagentowy*
 
 
-Pytania:
----------
+Pytania?
+========
 
-- Czy łatwiej pisać taski do Ansibla niż własne skrypty?
--
+
 
 
 

@@ -1,5 +1,5 @@
 - name: install and configure clouds
-  hosts: localhost
+  hosts: all
   roles:
     - clouds
   become: true

@@ -11,11 +11,11 @@ Ansible
 
 
 
-- Ansible to prosty framework do deplyment. Z jednego miejsca możemy automatycznie tworzyć i konfigurować zdalne maszyny, konfigurwać i uruchamiać serwisy, albo poprostu wykonywać komendy na zdalnych maszynach.
+- Ansible to prosty framework do deplyment. Z jednego miejsca możemy automatycznie tworzyć i konfigurować zdalne maszyny, konfigurwać i uruchamiać serwisy, albo po prostu wykonywać komendy na zdalnych maszynach.
 
-- Do komunikacji z założenia używa ssh(paramiko) albo bezpośrednio wykonuje zadania na kontrolerze. Ale można tworzyć własne pluginy.
+- Do komunikacji z założenia używa ssh(paramiko) albo bezpośrednio wykonuje zadania na kontrolerze.
 
-- Nie potrzebuje agentów, ponieważ wykonuję w "prosty" sposób zadania po zalogowaniu się przez ssh
+- Nie potrzebuje agentów, ponieważ wykonuję w "prosty" sposób zadania po zalogowaniu się przez ssh.
 
 - Posiada bardzo dużo ilość modułów do najpopularniejszych systemów opracyjnych oraz serwisów. Można też dopisywać własne moduły.
 

@@ -3,7 +3,7 @@ Terminologia
 
 Inventory
 ==========
-Plik z specyfikacją hostów oraz grup.
+Plik z opisem hostów oraz grup.
 
 Formaty:
 - INI
@@ -33,7 +33,7 @@ Na przykład:
 
 Task
 =====
-Pojedyńcze zadania wykonywane na zdalnej maszynie
+Pojedyncze zadania wykonywane na zdalnej maszynie
 
 
 
@@ -71,7 +71,7 @@ Orkiestracja zadań, konfiguracji oraz deploymentu.
 
 Role
 ======
-Jednostka z zadaniami, konfiguracją, zmiennymy itp.
+Jednostka z zadaniami, konfiguracją, zmiennymi itp.
 
 .. code-block:: yaml
 

@@ -23,11 +23,11 @@ Pierwszy Ping
 
 .. note::
 
-   Moduł ping służy do sprawdzania czy zdalny host jest osiągalny `ping`_
+   Moduł ping służy do sprawdzania, czy zdalny host jest osiągalny `ping`_
 
 .. _ping: https://docs.ansible.com/ansible/latest/modules/ping_module.html
 
-Installowanie Pythona bez Pythona
+Instalowanie Pythona bez Pythona
 ----------------------------------
 
 .. code-block:: sh
@@ -46,7 +46,7 @@ Installowanie Pythona bez Pythona
 
 .. note::
 
-   Moduł raw nie wymmaga Python, wykonuje polecanie bezpośrednio w shellu `raw`_
+   Moduł raw nie wymaga Python. Wykonuje polecanie bezpośrednio w shellu `raw`_
 
 .. _raw: https://docs.ansible.com/ansible/2.6/modules/raw_module.html
 
@@ -71,7 +71,7 @@ Jak dokładnie działa ansible
    $ ansible -i inv_test.ini all -m command -a 'pwd ; sleep 30'
 
 
-Tym czasem na zadalnej maszynie
+Tymczasem na zdalnej maszynie
 -----------------------------------
 
 .. code-block:: sh
