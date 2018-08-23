@@ -13,21 +13,28 @@ Rola: Clouds
 
 Templates
 ---------
-.. literalinclude:: ../../playbooks/roles/clouds/templates/main.sh
+
+.. literalinclude:: ../../playbooks/roles/clouds/templates/aws_cli_config.j2
+
+.. literalinclude:: ../../playbooks/roles/clouds/templates/aws_cli_credentials.j2
 
 defaults
 ---------
-.. literalinclude:: ../../playbooks/roles/clouds/defaults/main.sh
+
+.. literalinclude:: ../../playbooks/roles/clouds/defaults/main.yml
 
 Tasks
 ---------
+
 .. literalinclude:: ../../playbooks/roles/clouds/tasks/main.yml
 
 .. literalinclude:: ../../playbooks/roles/clouds/tasks/aws.yml
 
 .. literalinclude:: ../../playbooks/roles/clouds/tasks/azure.yml
+
 Output
 --------
+
 .. code-block:: sh
    $ ansible-vault create playbooks/roles/clouds/defaults/main.yml
    New Vault password:
