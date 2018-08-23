@@ -9,8 +9,8 @@
     version: master
     dest: '{{ home_path }}/.bash-git-prompt'
 
-- name: compy git-prompt config
-  file:
+- name: copy git-prompt config
+  copy:
     src: git-prompt-colors.sh
     dest: '{{ home_path }}/.git-prompt-colors.sh'
 

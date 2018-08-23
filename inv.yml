@@ -1,11 +1,3 @@
 all:
-  vars:
-    username: kepok
-    home_path: "/home/{{ username }}"
-    user_config: "{{ home_path }}/.config/{{ username}}_config"
-    git_name: pawel
-    git_email: test@gmail.com
-    projects:
-      - https://github.com/pawelkopka/workplace
-      - https://github.com/pawelkopka/SimpleMonitoring
+
 

@@ -8,10 +8,14 @@
     path: '{{ project_dir}}/requirements.txt'
   register: req
 
-- name: 'install {{ project_dir  }}'
+- name: 'create virtualenv'
+  shell: 'python3 -m venv {{ project_dir }}/venv'
+  when: req.stat.exists == True
+
+- name: 'install {{ project_dir }}/requirements.txt'
   pip:
     requirements: '{{ project_dir }}/requirements.txt'
     virtualenv: '{{ project_dir }}/venv'
-    virtualenv_command: python3 -m venv
+    virtualenv_command: python3 -m venv venv
   when: req.stat.exists == True
 

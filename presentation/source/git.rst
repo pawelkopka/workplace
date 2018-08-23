@@ -28,7 +28,30 @@ Tasks
 Output
 --------
 .. code-block:: sh
+   $ ansible-playbook playbooks/git.yml
 
+   PLAY [install and configure git] *********************************************************************************************************************
+
+   TASK [Gathering Facts] *******************************************************************************************************************************
+   ok: [localhost]
+
+   TASK [git : apt git] *********************************************************************************************************************************
+   ok: [localhost]
+
+   TASK [git : install bash-git-prompt] *****************************************************************************************************************
+   ok: [localhost]
+
+   TASK [git : copy git-prompt config] ******************************************************************************************************************
+   changed: [localhost]
+
+   TASK [git : add alias pycharm] ***********************************************************************************************************************
+   changed: [localhost] => (item=GIT_PROMPT_ONLY_IN_REPO=1)
+   changed: [localhost] => (item=source /home/kepok/.bash-git-prompt/gitprompt.sh)
+   changed: [localhost] => (item=GIT_PROMPT_THEME_FILE=/home/kepok/.git-prompt-colors.sh)
+   changed: [localhost] => (item=GIT_PROMPT_THEME=Custom)
+
+   PLAY RECAP *******************************************************************************************************************************************
+   localhost                  : ok=5    changed=2    unreachable=0    failed=0
 
 .. note::
 
