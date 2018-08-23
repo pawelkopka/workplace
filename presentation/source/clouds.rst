@@ -36,10 +36,10 @@ Output
 --------
 
 .. code-block:: sh
+
    $ ansible-vault create playbooks/roles/clouds/defaults/main.yml
    New Vault password:
    Confirm New Vault password:
-
 
    $ ansible-vault view playbooks/roles/clouds/defaults/main.yml
    Vault password:

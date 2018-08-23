@@ -1,5 +1,5 @@
 Człowiek o wielu twarzach
-***********************
+**************************
 .. image:: Scout.png
    :scale: 60 %
    :alt: alternate text
@@ -7,13 +7,25 @@ Człowiek o wielu twarzach
 
 Marian może odgrywać wiele ról, automatycznie w miarę szybko.
 
+
+Playbook
+---------
+   .. literalinclude:: ../../playbooks/deploy.yml
+
+
 Output
 --------
 .. code-block:: sh
 
-    $ ansible-playbook playbooks/deploy.yml
+    $ time ansible-playbook playbooks/deploy.yml --ask-vault-pass
 
    .....
 
+   PLAY RECAP *************************************************************************************************************************************************************************************************
+   34.250.28.34               : ok=48   changed=30   unreachable=0    failed=0
+
+   real    4m23.447s
+   user    0m26.480s
+   sys     0m6.276s
 
 

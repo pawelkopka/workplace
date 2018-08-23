@@ -28,6 +28,7 @@ Tasks
 Output
 --------
 .. code-block:: sh
+
    $ ansible-playbook playbooks/git.yml
 
    PLAY [install and configure git] *********************************************************************************************************************

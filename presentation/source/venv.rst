@@ -20,8 +20,10 @@ Tasks
 
 .. literalinclude:: ../../playbooks/roles/venv/tasks/check_and_install.yml
 
+
 Output
 --------
+
 .. code-block:: bash
 
    $ ansible-playbook playbooks/venv.yml
@@ -61,7 +63,6 @@ Output
 
    PLAY RECAP *******************************************************************************************************************************************
    localhost                  : ok=9    changed=2    unreachable=0    failed=0
-
 
 .. note::
 
