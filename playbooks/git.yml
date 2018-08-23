@@ -1,5 +1,5 @@
 - name: install and configure git
-  hosts: localhost
+  hosts: all
   roles:
     - git
   become: true

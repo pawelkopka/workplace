@@ -7,9 +7,10 @@
     - tmuxinator
 
 - name: add tmux config
-  file:
+  copy:
     src: tmux.config
     dest: '{{ user_config }}/.tmux.conf'
+
 
 - name: Create symbolic link
   file:

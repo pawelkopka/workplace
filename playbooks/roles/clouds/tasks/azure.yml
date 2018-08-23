@@ -1,0 +1,5 @@
+- name: download azure cli
+  pip:
+    name: azure-cli
+    state: present
+

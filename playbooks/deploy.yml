@@ -1,3 +1,4 @@
+- import_playbook: install_python.yml
 - import_playbook: bashrc.yml
 - import_playbook: terminal.yml
 - import_playbook: git.yml
@@ -5,3 +6,4 @@
 - import_playbook: editors.yml
 - import_playbook: projects.yml
 - import_playbook: venv.yml
+- import_playbook: clouds.yml

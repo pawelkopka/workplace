@@ -1,5 +1,5 @@
 - name: create config place
-  hosts: localhost
+  hosts: all
   roles:
     - bashrc
   become: true

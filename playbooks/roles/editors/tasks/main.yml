@@ -34,4 +34,3 @@
   apt:
     name: "vim"
     state: present
-    update_cache: yes

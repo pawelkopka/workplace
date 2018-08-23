@@ -1,5 +1,5 @@
 - name: install and config python
-  hosts: localhost
+  hosts: all
   roles:
     - python
   become: true

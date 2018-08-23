@@ -10,7 +10,6 @@
   apt:
     name: "{{ item }}"
     state: present
-    update_cache: yes
   with_items:
       - "python{{ python_version }}"
       - "python-dev"
@@ -21,7 +20,6 @@
   apt:
     name: "{{ item }}"
     state: present
-    update_cache: yes
   with_items:
       - python-pip
       - python3-pip
