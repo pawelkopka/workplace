@@ -16,6 +16,7 @@ Ansible w każdej kuchni
    terminal
    git
    projects
+   venv
    clouds
    koniec
    podsumowanie
