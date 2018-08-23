@@ -55,6 +55,6 @@ Output
 
 .. note::
 
-   Template pozwala generowanie plików, konfigów na podstawie zmienny. `template`_
+   Template pozwala generowanie plików, configów na podstawie zmienny. `template`_
 
 .. _template: https://docs.ansible.com/ansible/latest/modules/template_module.html

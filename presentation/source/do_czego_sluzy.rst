@@ -29,11 +29,11 @@ Playbook dla web
             environment:
               FLASK_APP: /var/www/flaskapp.py
 
-Playbook dla lo
+Playbook dla lb
 
 .. code-block:: yaml
 
-   - hosts: lo
+   - hosts: lb
      tasks:
       - name: ensure nginx is at the latest version
         apt:

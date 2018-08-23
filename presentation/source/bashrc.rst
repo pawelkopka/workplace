@@ -5,8 +5,7 @@ Leń
    :alt: alternate text
    :align: right
 
-Marian to trochę leń więc często dodaje aliasy od basha. Dlatego g to git, co bardzo często irytuje innych.
-Ale Marian jest pod to.
+Z Mariana trochę jest leń więc często dodaje aliasy od basha. Dlatego g to git, co bardzo często irytuje innych. Jednak Marian jest pod to.
 
 
 
@@ -56,6 +55,6 @@ Output
 .. note::
 
    Shell pozwala wykonywanie dowolnej komendy w shellu, na przykład grep itp.
-   Za pomocą register możemy przechwycliś stdout i używć w When dla kolejnego zadania. `Shell`_
+   Za pomocą register możemy przechwycić stdout i używać w When dla kolejnego zadania. `Shell`_
 
 .. _Shell: https://docs.ansible.com/ansible/2.5/modules/shell_module.html

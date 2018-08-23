@@ -1,7 +1,7 @@
 Napiszmy historię
 ***********************
 
-Playbooki powinny być jaki historia, pełna dobrze odegranych rul.
+Playbooki powinny być jaki historia, pełna dobrze odegranych ról.
 
 Bohater
 ========
@@ -21,8 +21,8 @@ Marian
    :alt: alternate text
    :align: right
 
-Marian jest hipisem dlatego nie przepada za statycznym typowaniem, ale jest dorosły i odpowiedzialny.
-Dlatego Python będzie świetnym dla niego.
+Marian jest hipisem, dlatego nie przepada za statycznym typowaniem. Jest też dorosły i odpowiedzialny.
+   Dlatego Python będzie świetnym dla niego.
 
 
 Rola: Python
@@ -67,6 +67,6 @@ Output
 
 .. note::
 
-   Apt jest jak każdy widzi `apt`_
+   Apt jest, jak każdy widzi. `apt`_
 
 .. _apt: https://docs.ansible.com/ansible/latest/modules/apt_module.html

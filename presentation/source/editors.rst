@@ -1,7 +1,7 @@
 Romantyk
 ***********************
 
-Marian jest trochę poetą dlatego przydałby mu się jakiś edytor. Jak że też jest trochę cebulą dlatego używa pycharm comnunity.
+Marian jest trochę poetą, dlatego przydałby mu się jakiś edytor. Jak że też jest trochę cebulą dlatego używa pycharm comnunity.
 Nie jest też najmłodszy więc vim też mu nie jest obcy.
 
 .. image:: old.png
@@ -59,6 +59,6 @@ Output
 
 .. note::
 
-   lineinfile pozwala na dodawanie lini do dowolnego pliku, na przykład bashrc `lineinfile`_
+   lineinfile pozwala na dodawanie linii do dowolnego pliku, na przykład bashrc `lineinfile`_
 
 .. _lineinfile: https://docs.ansible.com/ansible/latest/modules/apt_module.html

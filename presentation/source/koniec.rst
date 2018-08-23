@@ -5,7 +5,7 @@ Człowiek o wielu twarzach
    :alt: alternate text
    :align: right
 
-Marian może odgrywać wiele rul, automatycznie w miarę szybko.
+Marian może odgrywać wiele ról, automatycznie w miarę szybko.
 
 Output
 --------

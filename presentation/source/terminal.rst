@@ -5,9 +5,9 @@ Terminator
    :alt: alternate text
    :align: right
 
-Marian lubi state filmy, uważa że już nikt nie robi porządnych film. A aktualna młodziesz....
-Nie też czemu jest takie  zainteresowanie AI, chyba każdy wie czy jest(będzie) skynet...
-W obawie przed skynetem kożystał z terminator, ale ostatnio przeżucił się na tmux+tmuxinator.
+Marian lubi state filmy, uważa, że już nikt nie robi porządnych film. A aktualna młodzież…
+Nie wie też czemu jest takie zainteresowanie AI, chyba każdy wie, czy jest (będzie) skynet…
+W obawie przed skynetem korzystał z terminator, ale ostatnio przerzucił się na tmux+tmuxinator.
 
 
 Rola: Terminal
@@ -46,6 +46,6 @@ Output
 
 .. note::
 
-   file pozwala na kopiowanie plików w dowolne miejsce, miedzy innymi konfigów `file`_
+   File pozwala na kopiowanie plików w dowolne miejsce, między innymi konfigów. `file`_
 
 .. _file: https://docs.ansible.com/ansible/2.5/modules/file_module.html

@@ -5,7 +5,7 @@ Marzyciel
    :alt: alternate text
    :align: right
 
-Marian jest mażycielem i ciągle lata obłokach. Żeby tego dokonać potrzebujy jest mu kilent do aws i azure.
+Marian jest marzyciel i ciągle lata obłokach. Żeby, tego dokonać potrzeby jest mu klient do aws i azure.
 
 
 Rola: Clouds

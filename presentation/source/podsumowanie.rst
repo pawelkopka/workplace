@@ -6,7 +6,7 @@ Ansible
 =========
 
 - Prosty
-- Wiszechstrony
+- Wszechstronny
 - Bezagentowy*
 
 

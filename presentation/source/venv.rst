@@ -6,7 +6,7 @@ Ekolog
    :align: right
 
 Marian nie lubi toksycznego środowiska, dlatego dla każdego projektu tworzy wirtualne środowisko.
-Żeby mieć przyjane i czyste zależności, w końcu "u Niego działa".
+Żeby mieć przyjazne i czyste zależności, w końcu “u Niego działa”.
 
 
 Rola: Venv
@@ -65,6 +65,6 @@ Output
 
 .. note::
 
-   include pozwala na użycie taksów lub playbooków wewnątrz innego tasku `include`_
+   Include pozwala na użycie taksów lub playbooków wewnątrz innego tasku `include`_
 
 .. _include: https://docs.ansible.com/ansible/2.5/modules/include_module.html

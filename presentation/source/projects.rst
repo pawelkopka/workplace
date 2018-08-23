@@ -5,8 +5,8 @@ Budowniczy
    :alt: alternate text
    :align: right
 
-Marian czasem się ludzie w różnych projektch, czasem coś na konferencje, a czasem pisz coś swojego.
-Dlatego ma list repozytoriów na których pracuje.
+Marian czasem się ludzie w różnych projektach, czasem coś na konferencje, a czasem pisz coś swojego.
+Dlatego ma list repozytoriów, na których pracuje.
 
 
 
@@ -40,6 +40,6 @@ Output
 
 .. note::
 
-   Git pozwala na zarzącanie repozytoriami `git`_
+   Git pozwala na zarządzanie repozytoriami. `git`_
 
 .. _git: https://docs.ansible.com/ansible/latest/modules/git_module.html
