@@ -9,6 +9,7 @@ Mały deployment
 2 maszyny(web i loadbalancer)
 
 Inventory
+
 .. literalinclude:: inv_do1.ini
 
 Playbook dla web

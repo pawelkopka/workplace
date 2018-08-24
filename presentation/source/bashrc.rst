@@ -1,7 +1,7 @@
 Leń
 ***********************
 .. image:: fire.png
-   :scale: 30 %
+   :scale: 50 %
    :alt: alternate text
    :align: right
 
@@ -11,6 +11,14 @@ Z Mariana trochę jest leń więc często dodaje aliasy od basha. Dlatego g to g
 
 Rola: Bashrc
 =================
+.. code-block:: yaml
+
+   roles/
+      bashrc/
+        tasks/
+            main.yml
+        files/
+            main.yml
 
 Files
 ---------

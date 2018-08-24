@@ -11,6 +11,13 @@ Marian nie lubi toksycznego środowiska, dlatego dla każdego projektu tworzy wi
 
 Rola: Venv
 =================
+.. code-block:: yaml
+
+   roles/
+      projects/
+        tasks/
+            main.yml
+            check_and_install.yml
 
 
 Tasks

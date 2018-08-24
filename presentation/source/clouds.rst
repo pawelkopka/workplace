@@ -1,15 +1,28 @@
 Marzyciel
 ***********************
-.. image:: fire.png
-   :scale: 30 %
+.. image:: chmura.png
+   :scale: 120 %
    :alt: alternate text
    :align: right
 
-Marian jest marzyciel i ciągle lata obłokach. Żeby, tego dokonać potrzeby jest mu klient do aws i azure.
+Marian jest marzycielem i ciągle lata obłokach. Żeby, tego dokonać potrzeby jest mu klient do aws i azure.
 
 
 Rola: Clouds
 =================
+.. code-block:: yaml
+
+   roles/
+      projects/
+        tasks/
+            main.yml
+            aws.yml
+            azure.yml
+        templates/
+            aws_cli_config.j2
+            aws_cli_credentials.j2
+        defaults/
+            main.yml
 
 Templates
 ---------

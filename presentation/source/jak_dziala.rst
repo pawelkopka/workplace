@@ -1,5 +1,5 @@
-Jak działa Ansible
-*******************
+Jak działa Ansible?
+********************
 
 Tworzymy inventory
 --------------------

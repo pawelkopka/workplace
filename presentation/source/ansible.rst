@@ -3,12 +3,8 @@
    :alt: alternate text
    :align: right
 
-Produkt
-********
-
 Ansible
-========
-
+********
 
 
 - Ansible to prosty framework do deplyment. Z jednego miejsca możemy automatycznie tworzyć i konfigurować zdalne maszyny, konfigurwać i uruchamiać serwisy, albo po prostu wykonywać komendy na zdalnych maszynach.

@@ -21,12 +21,21 @@ Marian
    :alt: alternate text
    :align: right
 
-Marian jest hipisem, dlatego nie przepada za statycznym typowaniem. Jest też dorosły i odpowiedzialny.
-   Dlatego Python będzie świetnym dla niego.
+Marian jest hipisem, dlatego nie przepada za statycznym typowaniem. Jest też dorosły i odpowiedzialny. Dlatego Python będzie świetnym dla niego.
 
 
 Rola: Python
 =============
+
+.. code-block:: yaml
+
+   roles/
+      python/
+        tasks/
+            main.yml
+        defaults/
+            main.yml
+
 
 Defaults
 ---------

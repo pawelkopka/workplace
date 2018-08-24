@@ -6,14 +6,23 @@ Terminator
    :align: right
 
 Marian lubi state filmy, uważa, że już nikt nie robi porządnych film. A aktualna młodzież…
-Nie wie też czemu jest takie zainteresowanie AI, chyba każdy wie, czy jest (będzie) skynet…
+Nie wie też czemu jest takie zainteresowanie AI, chyba każdy wie, czym jest (będzie) skynet…
 W obawie przed skynetem korzystał z terminator, ale ostatnio przerzucił się na tmux+tmuxinator.
 
 
 Rola: Terminal
 =================
+.. code-block:: yaml
 
-Template
+   roles/
+      terminal/
+        tasks/
+            main.yml
+        files/
+            tmux.config
+
+
+File
 ---------
 .. literalinclude:: ../../playbooks/roles/terminal/files/tmux.config
 

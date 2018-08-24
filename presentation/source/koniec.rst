@@ -1,11 +1,11 @@
-Człowiek o wielu twarzach
+Robo-leń
 **************************
-.. image:: Scout.png
-   :scale: 60 %
+.. image:: robo.png
+   :scale: 120 %
    :alt: alternate text
    :align: right
 
-Marian może odgrywać wiele ról, automatycznie w miarę szybko.
+Marian lubi automatyzacje. Dlatego wkłada wiele ról w jeden playbook.
 
 
 Playbook

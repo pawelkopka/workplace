@@ -5,13 +5,19 @@ Budowniczy
    :alt: alternate text
    :align: right
 
-Marian czasem się ludzie w różnych projektach, czasem coś na konferencje, a czasem pisz coś swojego.
+Marian czasem się ludzie w różnych projektach, czasem coś na konferencje, a czasem pisz coś dla siebie.
 Dlatego ma list repozytoriów, na których pracuje.
 
 
 
 Rola: Projects
 =================
+.. code-block:: yaml
+
+   roles/
+      projects/
+        tasks/
+            main.yml
 
 Tasks
 ---------

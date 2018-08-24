@@ -19,6 +19,14 @@ Nie jest też najmłodszy więc vim też mu nie jest obcy.
 
 Rola: Editors
 =============
+.. code-block:: yaml
+
+   roles/
+      bashrc/
+        tasks/
+            main.yml
+        defaults/
+            main.yml
 
 Defaults
 ---------

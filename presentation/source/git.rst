@@ -5,13 +5,23 @@ Team spirit
    :alt: alternate text
    :align: right
 
-Marian lubi pracę zespołową i czuje team spirit. Dlatego korzysta z git i nie dzieli się kodem przy użyciu pendriva,
-ale że lubi kolorki w terminal dlatego ma używa git-prompt.
+Marian lubi pracę zespołową i czuje team spirit. Dlatego korzysta z git i nie dzieli się kodem przy użyciu pendrive,
+ale że lubi kolorki w terminalu dlatego ma używa git-prompt.
 
 
 
 Rola: Git
 =================
+.. code-block:: yaml
+
+   roles/
+      git/
+        tasks/
+            main.yml
+        files/
+            git-prompt-colors.sh
+        templates/
+            gitconfig.j2
 
 Templates
 ---------
