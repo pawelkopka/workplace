@@ -1,6 +1,10 @@
 Podsumowanie
 ***********************
 
+.. image:: boy.png
+   :scale: 100 %
+   :alt: alternate text
+   :align: right
 
 Ansible
 =========
