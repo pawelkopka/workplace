@@ -1,0 +1,362 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Marzyciel &mdash; Ansible w każdej kuchni  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Robo-leń" href="koniec.html" />
+    <link rel="prev" title="Ekolog" href="venv.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Ansible w każdej kuchni
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Agenda:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="autor.html">Trochę o mnie</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ansible.html">Ansible</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terminologia.html">Terminologia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jak_dziala.html">Jak działa Ansible?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="do_czego_sluzy.html">Do czego służy Ansible?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python.html">Napiszmy historię</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bashrc.html">Leń</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editors.html">Romantyk</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terminal.html">Terminator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git.html">Team spirit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="projects.html">Budowniczy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="venv.html">Ekolog</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Marzyciel</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#rola-clouds">Rola: Clouds</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="koniec.html">Robo-leń</a></li>
+<li class="toctree-l1"><a class="reference internal" href="podsumowanie.html">Podsumowanie</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Ansible w każdej kuchni</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Marzyciel</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/clouds.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="marzyciel">
+<h1>Marzyciel<a class="headerlink" href="#marzyciel" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="_images/chmura.png"><img alt="alternate text" class="align-right" src="_images/chmura.png" style="width: 228.0px; height: 228.0px;" /></a>
+<p>Marian jest marzycielem i ciągle lata obłokach. Żeby, tego dokonać potrzeby jest mu klient do aws i azure.</p>
+<div class="section" id="rola-clouds">
+<h2>Rola: Clouds<a class="headerlink" href="#rola-clouds" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">roles/</span>
+   <span class="l l-Scalar l-Scalar-Plain">projects/</span>
+     <span class="l l-Scalar l-Scalar-Plain">tasks/</span>
+         <span class="l l-Scalar l-Scalar-Plain">main.yml</span>
+         <span class="l l-Scalar l-Scalar-Plain">aws.yml</span>
+         <span class="l l-Scalar l-Scalar-Plain">azure.yml</span>
+     <span class="l l-Scalar l-Scalar-Plain">templates/</span>
+         <span class="l l-Scalar l-Scalar-Plain">aws_cli_config.j2</span>
+         <span class="l l-Scalar l-Scalar-Plain">aws_cli_credentials.j2</span>
+     <span class="l l-Scalar l-Scalar-Plain">defaults/</span>
+         <span class="l l-Scalar l-Scalar-Plain">main.yml</span>
+</pre></div>
+</div>
+<div class="section" id="templates">
+<h3>Templates<a class="headerlink" href="#templates" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">default</span><span class="p">]</span>
+<span class="n">output</span> <span class="o">=</span> <span class="p">{{</span> <span class="n">aws_output_format</span> <span class="p">}}</span>
+<span class="n">region</span> <span class="o">=</span> <span class="p">{{</span> <span class="n">aws_region</span> <span class="p">}}</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">default</span><span class="p">]</span>
+<span class="n">aws_access_key_id</span> <span class="o">=</span> <span class="p">{{</span> <span class="n">aws_access_key_id</span> <span class="p">}}</span>
+<span class="n">aws_secret_access_key</span> <span class="o">=</span> <span class="p">{{</span> <span class="n">aws_secret_access_key</span> <span class="p">}}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="defaults">
+<h3>defaults<a class="headerlink" href="#defaults" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ANSIBLE_VAULT;1.1;AES256
+63373531646461306634396634643263323331333634333436326636326539363765636633616634
+3637343365376334373765653162633033393837343161620a663534353832666234653738386661
+37323965306262393864346434653566333862666164643839343433333031653261636562636335
+3335366439336230650a656334633532306431366530343461623663373663613734373563346336
+31396233353333616431616430643238613537393130363962393838643938663065303831346536
+61343965303339383634386366393364623335623032376263643230653862376638643039396562
+33356332336339313135613664646162656535643439653938333162383033633232636566346632
+31383538666264353231646635646634313834613534626434363432393837366336383563313765
+32343932396133323637666632366237393036363830383833393465383230613132333332643138
+39366335643365613364333261666237336232393366633463626565326162666337666635623337
+33633533636330313132653336383566353863353733656231623931383337633733643334336461
+36313431363437666236
+</pre></div>
+</div>
+</div>
+<div class="section" id="tasks">
+<h3>Tasks<a class="headerlink" href="#tasks" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">import_tasks</span><span class="p">:</span> <span class="n">aws</span><span class="o">.</span><span class="n">yml</span>
+<span class="o">-</span> <span class="n">import_tasks</span><span class="p">:</span> <span class="n">azure</span><span class="o">.</span><span class="n">yml</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="n">create</span> <span class="n">config</span> <span class="n">directory</span>
+  <span class="n">file</span><span class="p">:</span>
+    <span class="n">path</span><span class="p">:</span> <span class="s1">&#39;{{ home_path }}/.aws&#39;</span>
+    <span class="n">state</span><span class="p">:</span> <span class="n">directory</span>
+
+
+<span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="n">install</span> <span class="n">aws</span> <span class="n">cli</span>
+  <span class="n">pip</span><span class="p">:</span>
+    <span class="n">name</span><span class="p">:</span> <span class="n">awscli</span>
+    <span class="n">state</span><span class="p">:</span> <span class="n">present</span>
+
+<span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="n">Copy</span> <span class="n">AWS</span> <span class="n">config</span>
+  <span class="n">template</span><span class="p">:</span>
+    <span class="n">src</span><span class="p">:</span> <span class="n">aws_cli_config</span><span class="o">.</span><span class="n">j2</span>
+    <span class="n">dest</span><span class="p">:</span> <span class="s1">&#39;{{ home_path }}/.aws/config&#39;</span>
+
+
+<span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="n">Copy</span> <span class="n">AWS</span> <span class="n">CLI</span> <span class="n">credentials</span>
+  <span class="n">template</span><span class="p">:</span>
+    <span class="n">src</span><span class="p">:</span> <span class="n">aws_cli_credentials</span><span class="o">.</span><span class="n">j2</span>
+    <span class="n">dest</span><span class="p">:</span> <span class="s1">&#39;{{ home_path }}/.aws/credentials&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="n">download</span> <span class="n">azure</span> <span class="n">cli</span>
+  <span class="n">pip</span><span class="p">:</span>
+    <span class="n">name</span><span class="p">:</span> <span class="n">azure</span><span class="o">-</span><span class="n">cli</span>
+    <span class="n">state</span><span class="p">:</span> <span class="n">present</span>
+
+</pre></div>
+</div>
+</div>
+<div class="section" id="output">
+<h3>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ ansible-vault create playbooks/roles/clouds/defaults/main.yml
+New Vault password:
+Confirm New Vault password:
+
+$ ansible-vault view playbooks/roles/clouds/defaults/main.yml
+Vault password:
+aws_output_format: <span class="s1">&#39;table&#39;</span>
+aws_region: <span class="s1">&#39;eu-west-1&#39;</span>
+aws_access_key_id: <span class="s1">&#39;access_key_id&#39;</span>
+aws_secret_access_key: <span class="s1">&#39;secret_access_key&#39;</span>
+
+$ ansible-playbook  -i inv.yml playbooks/clouds.yml --ask-vault-pass
+Vault password:
+
+PLAY <span class="o">[</span>install and configure clouds<span class="o">]</span> ******************************************************************************************************************
+
+TASK <span class="o">[</span>Gathering Facts<span class="o">]</span> *******************************************************************************************************************************
+ok: <span class="o">[</span>localhost<span class="o">]</span>
+
+TASK <span class="o">[</span>clouds : install aws cli<span class="o">]</span> **********************************************************************************************************************
+ok: <span class="o">[</span>localhost<span class="o">]</span>
+
+TASK <span class="o">[</span>clouds : Copy AWS config<span class="o">]</span> **********************************************************************************************************************
+ok: <span class="o">[</span>localhost<span class="o">]</span>
+
+TASK <span class="o">[</span>clouds : Copy AWS CLI credentials<span class="o">]</span> *************************************************************************************************************
+ok: <span class="o">[</span>localhost<span class="o">]</span>
+
+TASK <span class="o">[</span>clouds : download azure cli<span class="o">]</span> *******************************************************************************************************************
+ok: <span class="o">[</span>localhost<span class="o">]</span>
+
+PLAY RECAP *******************************************************************************************************************************************
+localhost                  : <span class="nv">ok</span><span class="o">=</span><span class="m">5</span>    <span class="nv">changed</span><span class="o">=</span><span class="m">0</span>    <span class="nv">unreachable</span><span class="o">=</span><span class="m">0</span>    <span class="nv">failed</span><span class="o">=</span><span class="m">0</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Vault pozwala na szyfrowanie plików ze zmiennymi. <a class="reference external" href="https://docs.ansible.com/ansible/2.4/vault.html">vault</a></p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="koniec.html" class="btn btn-neutral float-right" title="Robo-leń" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="venv.html" class="btn btn-neutral" title="Ekolog" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Paweł Kopka.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

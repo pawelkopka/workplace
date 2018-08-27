@@ -1,0 +1,457 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Terminator &mdash; Ansible w każdej kuchni  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Team spirit" href="git.html" />
+    <link rel="prev" title="Romantyk" href="editors.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Ansible w każdej kuchni
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Agenda:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="autor.html">Trochę o mnie</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ansible.html">Ansible</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terminologia.html">Terminologia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jak_dziala.html">Jak działa Ansible?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="do_czego_sluzy.html">Do czego służy Ansible?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python.html">Napiszmy historię</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bashrc.html">Leń</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editors.html">Romantyk</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Terminator</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#rola-terminal">Rola: Terminal</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="git.html">Team spirit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="projects.html">Budowniczy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="venv.html">Ekolog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clouds.html">Marzyciel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="koniec.html">Robo-leń</a></li>
+<li class="toctree-l1"><a class="reference internal" href="podsumowanie.html">Podsumowanie</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Ansible w każdej kuchni</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Terminator</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/terminal.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="terminator">
+<h1>Terminator<a class="headerlink" href="#terminator" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="_images/Robotics_Expert.png"><img alt="alternate text" class="align-right" src="_images/Robotics_Expert.png" style="width: 210.0px; height: 175.8px;" /></a>
+<p>Marian lubi state filmy, uważa, że już nikt nie robi porządnych film. A aktualna młodzież…
+Nie wie też czemu jest takie zainteresowanie AI, chyba każdy wie, czym jest (będzie) skynet…
+W obawie przed skynetem korzystał z terminator, ale ostatnio przerzucił się na tmux+tmuxinator.</p>
+<div class="section" id="rola-terminal">
+<h2>Rola: Terminal<a class="headerlink" href="#rola-terminal" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">roles/</span>
+   <span class="l l-Scalar l-Scalar-Plain">terminal/</span>
+     <span class="l l-Scalar l-Scalar-Plain">tasks/</span>
+         <span class="l l-Scalar l-Scalar-Plain">main.yml</span>
+     <span class="l l-Scalar l-Scalar-Plain">files/</span>
+         <span class="l l-Scalar l-Scalar-Plain">tmux.config</span>
+</pre></div>
+</div>
+<div class="section" id="file">
+<h3>File<a class="headerlink" href="#file" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## MY CHANGE</span>
+
+<span class="c1">#add prefix combination crtl+a</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">prefix2</span> <span class="n">C</span><span class="o">-</span><span class="n">a</span>
+<span class="n">bind</span> <span class="n">C</span><span class="o">-</span><span class="n">a</span> <span class="n">send</span><span class="o">-</span><span class="n">prefix</span> <span class="o">-</span><span class="mi">2</span>
+
+<span class="c1"># split panes using | and -</span>
+<span class="n">bind</span> <span class="o">|</span> <span class="n">split</span><span class="o">-</span><span class="n">window</span> <span class="o">-</span><span class="n">h</span>
+<span class="n">bind</span> <span class="o">-</span> <span class="n">split</span><span class="o">-</span><span class="n">window</span> <span class="o">-</span><span class="n">v</span>
+
+
+
+<span class="c1">#witch panes using Alt-arrow without prefix</span>
+<span class="n">bind</span> <span class="o">-</span><span class="n">n</span> <span class="n">M</span><span class="o">-</span><span class="n">Left</span> <span class="n">select</span><span class="o">-</span><span class="n">pane</span> <span class="o">-</span><span class="n">L</span>
+<span class="n">bind</span> <span class="o">-</span><span class="n">n</span> <span class="n">M</span><span class="o">-</span><span class="n">Right</span> <span class="n">select</span><span class="o">-</span><span class="n">pane</span> <span class="o">-</span><span class="n">R</span>
+<span class="n">bind</span> <span class="o">-</span><span class="n">n</span> <span class="n">M</span><span class="o">-</span><span class="n">Up</span> <span class="n">select</span><span class="o">-</span><span class="n">pane</span> <span class="o">-</span><span class="n">U</span>
+<span class="n">bind</span> <span class="o">-</span><span class="n">n</span> <span class="n">M</span><span class="o">-</span><span class="n">Down</span> <span class="n">select</span><span class="o">-</span><span class="n">pane</span> <span class="o">-</span><span class="n">D</span>
+
+<span class="c1"># Switch windows </span>
+<span class="c1"># usage: &quot;SHIFT+arrow&quot; (without prefix key)</span>
+<span class="n">bind</span> <span class="o">-</span><span class="n">n</span> <span class="n">S</span><span class="o">-</span><span class="n">Left</span>  <span class="n">previous</span><span class="o">-</span><span class="n">window</span>
+<span class="n">bind</span> <span class="o">-</span><span class="n">n</span> <span class="n">S</span><span class="o">-</span><span class="n">Right</span> <span class="nb">next</span><span class="o">-</span><span class="n">window</span>
+
+<span class="c1"># Enable mouse control (clickable windows, panes, resizable panes)</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">mouse</span> <span class="n">on</span>
+
+<span class="c1">######################</span>
+<span class="c1">### DESIGN CHANGES ###</span>
+<span class="c1">######################</span>
+
+<span class="c1"># panes</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">pane</span><span class="o">-</span><span class="n">border</span><span class="o">-</span><span class="n">fg</span> <span class="n">black</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">pane</span><span class="o">-</span><span class="n">active</span><span class="o">-</span><span class="n">border</span><span class="o">-</span><span class="n">fg</span> <span class="n">brightred</span>
+
+<span class="c1">## Status bar design</span>
+<span class="c1"># status line</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">status</span><span class="o">-</span><span class="n">utf8</span> <span class="n">on</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">status</span><span class="o">-</span><span class="n">justify</span> <span class="n">left</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">status</span><span class="o">-</span><span class="n">bg</span> <span class="n">default</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">status</span><span class="o">-</span><span class="n">fg</span> <span class="n">colour12</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">status</span><span class="o">-</span><span class="n">interval</span> <span class="mi">2</span>
+
+<span class="c1"># messaging</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">message</span><span class="o">-</span><span class="n">fg</span> <span class="n">black</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">message</span><span class="o">-</span><span class="n">bg</span> <span class="n">yellow</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">message</span><span class="o">-</span><span class="n">command</span><span class="o">-</span><span class="n">fg</span> <span class="n">blue</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">message</span><span class="o">-</span><span class="n">command</span><span class="o">-</span><span class="n">bg</span> <span class="n">black</span>
+
+<span class="c1">#window mode</span>
+<span class="n">setw</span> <span class="o">-</span><span class="n">g</span> <span class="n">mode</span><span class="o">-</span><span class="n">bg</span> <span class="n">colour6</span>
+<span class="n">setw</span> <span class="o">-</span><span class="n">g</span> <span class="n">mode</span><span class="o">-</span><span class="n">fg</span> <span class="n">colour0</span>
+
+<span class="c1"># window status</span>
+<span class="n">setw</span> <span class="o">-</span><span class="n">g</span> <span class="n">window</span><span class="o">-</span><span class="n">status</span><span class="o">-</span><span class="nb">format</span> <span class="s2">&quot; #F#I:#W#F &quot;</span>
+<span class="n">setw</span> <span class="o">-</span><span class="n">g</span> <span class="n">window</span><span class="o">-</span><span class="n">status</span><span class="o">-</span><span class="n">current</span><span class="o">-</span><span class="nb">format</span> <span class="s2">&quot; #F#I:#W#F &quot;</span>
+<span class="n">setw</span> <span class="o">-</span><span class="n">g</span> <span class="n">window</span><span class="o">-</span><span class="n">status</span><span class="o">-</span><span class="nb">format</span> <span class="s2">&quot;#[fg=magenta]#[bg=black] #I #[bg=cyan]#[fg=colour8] #W &quot;</span>
+<span class="n">setw</span> <span class="o">-</span><span class="n">g</span> <span class="n">window</span><span class="o">-</span><span class="n">status</span><span class="o">-</span><span class="n">current</span><span class="o">-</span><span class="nb">format</span> <span class="s2">&quot;#[bg=brightmagenta]#[fg=colour8] #I #[fg=colour8]#[bg=colour14] #W &quot;</span>
+<span class="n">setw</span> <span class="o">-</span><span class="n">g</span> <span class="n">window</span><span class="o">-</span><span class="n">status</span><span class="o">-</span><span class="n">current</span><span class="o">-</span><span class="n">bg</span> <span class="n">colour0</span>
+<span class="n">setw</span> <span class="o">-</span><span class="n">g</span> <span class="n">window</span><span class="o">-</span><span class="n">status</span><span class="o">-</span><span class="n">current</span><span class="o">-</span><span class="n">fg</span> <span class="n">colour11</span>
+<span class="n">setw</span> <span class="o">-</span><span class="n">g</span> <span class="n">window</span><span class="o">-</span><span class="n">status</span><span class="o">-</span><span class="n">current</span><span class="o">-</span><span class="n">attr</span> <span class="n">dim</span>
+<span class="n">setw</span> <span class="o">-</span><span class="n">g</span> <span class="n">window</span><span class="o">-</span><span class="n">status</span><span class="o">-</span><span class="n">bg</span> <span class="n">green</span>
+<span class="n">setw</span> <span class="o">-</span><span class="n">g</span> <span class="n">window</span><span class="o">-</span><span class="n">status</span><span class="o">-</span><span class="n">fg</span> <span class="n">black</span>
+<span class="n">setw</span> <span class="o">-</span><span class="n">g</span> <span class="n">window</span><span class="o">-</span><span class="n">status</span><span class="o">-</span><span class="n">attr</span> <span class="n">reverse</span>
+
+<span class="c1"># Info on left (I don&#39;t have a session display for now)</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">status</span><span class="o">-</span><span class="n">left</span> <span class="s1">&#39;&#39;</span>
+
+<span class="c1"># loud or quiet?</span>
+<span class="nb">set</span><span class="o">-</span><span class="n">option</span> <span class="o">-</span><span class="n">g</span> <span class="n">visual</span><span class="o">-</span><span class="n">activity</span> <span class="n">off</span>
+<span class="nb">set</span><span class="o">-</span><span class="n">option</span> <span class="o">-</span><span class="n">g</span> <span class="n">visual</span><span class="o">-</span><span class="n">bell</span> <span class="n">off</span>
+<span class="nb">set</span><span class="o">-</span><span class="n">option</span> <span class="o">-</span><span class="n">g</span> <span class="n">visual</span><span class="o">-</span><span class="n">silence</span> <span class="n">off</span>
+<span class="nb">set</span><span class="o">-</span><span class="n">window</span><span class="o">-</span><span class="n">option</span> <span class="o">-</span><span class="n">g</span> <span class="n">monitor</span><span class="o">-</span><span class="n">activity</span> <span class="n">off</span>
+<span class="nb">set</span><span class="o">-</span><span class="n">option</span> <span class="o">-</span><span class="n">g</span> <span class="n">bell</span><span class="o">-</span><span class="n">action</span> <span class="n">none</span>
+
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">default</span><span class="o">-</span><span class="n">terminal</span> <span class="s2">&quot;screen-256color&quot;</span>
+
+<span class="c1"># The modes {</span>
+<span class="n">setw</span> <span class="o">-</span><span class="n">g</span> <span class="n">clock</span><span class="o">-</span><span class="n">mode</span><span class="o">-</span><span class="n">colour</span> <span class="n">colour135</span>
+<span class="n">setw</span> <span class="o">-</span><span class="n">g</span> <span class="n">mode</span><span class="o">-</span><span class="n">attr</span> <span class="n">bold</span>
+<span class="n">setw</span> <span class="o">-</span><span class="n">g</span> <span class="n">mode</span><span class="o">-</span><span class="n">fg</span> <span class="n">colour196</span>
+<span class="n">setw</span> <span class="o">-</span><span class="n">g</span> <span class="n">mode</span><span class="o">-</span><span class="n">bg</span> <span class="n">colour238</span>
+
+<span class="c1"># }</span>
+<span class="c1"># The panes {</span>
+
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">pane</span><span class="o">-</span><span class="n">border</span><span class="o">-</span><span class="n">bg</span> <span class="n">colour235</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">pane</span><span class="o">-</span><span class="n">border</span><span class="o">-</span><span class="n">fg</span> <span class="n">colour238</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">pane</span><span class="o">-</span><span class="n">active</span><span class="o">-</span><span class="n">border</span><span class="o">-</span><span class="n">bg</span> <span class="n">colour236</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">pane</span><span class="o">-</span><span class="n">active</span><span class="o">-</span><span class="n">border</span><span class="o">-</span><span class="n">fg</span> <span class="n">colour51</span>
+
+<span class="c1"># }</span>
+<span class="c1"># The statusbar {</span>
+
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">status</span><span class="o">-</span><span class="n">position</span> <span class="n">bottom</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">status</span><span class="o">-</span><span class="n">bg</span> <span class="n">colour234</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">status</span><span class="o">-</span><span class="n">fg</span> <span class="n">colour137</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">status</span><span class="o">-</span><span class="n">attr</span> <span class="n">dim</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">status</span><span class="o">-</span><span class="n">left</span> <span class="s1">&#39;&#39;</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">status</span><span class="o">-</span><span class="n">right</span> <span class="s1">&#39;#[fg=colour233,bg=colour241,bold] </span><span class="si">%d</span><span class="s1">/%m #[fg=colour233,bg=colour245,bold] %H:%M:%S &#39;</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">status</span><span class="o">-</span><span class="n">right</span><span class="o">-</span><span class="n">length</span> <span class="mi">50</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">status</span><span class="o">-</span><span class="n">left</span><span class="o">-</span><span class="n">length</span> <span class="mi">20</span>
+
+<span class="n">setw</span> <span class="o">-</span><span class="n">g</span> <span class="n">window</span><span class="o">-</span><span class="n">status</span><span class="o">-</span><span class="n">current</span><span class="o">-</span><span class="n">fg</span> <span class="n">colour81</span>
+<span class="n">setw</span> <span class="o">-</span><span class="n">g</span> <span class="n">window</span><span class="o">-</span><span class="n">status</span><span class="o">-</span><span class="n">current</span><span class="o">-</span><span class="n">bg</span> <span class="n">colour238</span>
+<span class="n">setw</span> <span class="o">-</span><span class="n">g</span> <span class="n">window</span><span class="o">-</span><span class="n">status</span><span class="o">-</span><span class="n">current</span><span class="o">-</span><span class="n">attr</span> <span class="n">bold</span>
+<span class="n">setw</span> <span class="o">-</span><span class="n">g</span> <span class="n">window</span><span class="o">-</span><span class="n">status</span><span class="o">-</span><span class="n">current</span><span class="o">-</span><span class="nb">format</span> <span class="s1">&#39; #I#[fg=colour250]:#[fg=colour255]#W#[fg=colour50]#F &#39;</span>
+
+<span class="n">setw</span> <span class="o">-</span><span class="n">g</span> <span class="n">window</span><span class="o">-</span><span class="n">status</span><span class="o">-</span><span class="n">fg</span> <span class="n">colour138</span>
+<span class="n">setw</span> <span class="o">-</span><span class="n">g</span> <span class="n">window</span><span class="o">-</span><span class="n">status</span><span class="o">-</span><span class="n">bg</span> <span class="n">colour235</span>
+<span class="n">setw</span> <span class="o">-</span><span class="n">g</span> <span class="n">window</span><span class="o">-</span><span class="n">status</span><span class="o">-</span><span class="n">attr</span> <span class="n">none</span>
+<span class="n">setw</span> <span class="o">-</span><span class="n">g</span> <span class="n">window</span><span class="o">-</span><span class="n">status</span><span class="o">-</span><span class="nb">format</span> <span class="s1">&#39; #I#[fg=colour237]:#[fg=colour250]#W#[fg=colour244]#F &#39;</span>
+
+<span class="n">setw</span> <span class="o">-</span><span class="n">g</span> <span class="n">window</span><span class="o">-</span><span class="n">status</span><span class="o">-</span><span class="n">bell</span><span class="o">-</span><span class="n">attr</span> <span class="n">bold</span>
+<span class="n">setw</span> <span class="o">-</span><span class="n">g</span> <span class="n">window</span><span class="o">-</span><span class="n">status</span><span class="o">-</span><span class="n">bell</span><span class="o">-</span><span class="n">fg</span> <span class="n">colour255</span>
+<span class="n">setw</span> <span class="o">-</span><span class="n">g</span> <span class="n">window</span><span class="o">-</span><span class="n">status</span><span class="o">-</span><span class="n">bell</span><span class="o">-</span><span class="n">bg</span> <span class="n">colour1</span>
+
+<span class="c1"># }</span>
+<span class="c1"># The messages {</span>
+
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">message</span><span class="o">-</span><span class="n">attr</span> <span class="n">bold</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">message</span><span class="o">-</span><span class="n">fg</span> <span class="n">colour232</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="n">message</span><span class="o">-</span><span class="n">bg</span> <span class="n">colour166</span>
+
+<span class="c1"># }</span>
+
+<span class="c1"># use a large scrollback history</span>
+<span class="nb">set</span><span class="o">-</span><span class="n">option</span> <span class="o">-</span><span class="n">g</span> <span class="n">history</span><span class="o">-</span><span class="n">limit</span> <span class="mi">10000</span>
+
+<span class="c1"># bind key for synchronizing panes</span>
+<span class="n">bind</span><span class="o">-</span><span class="n">key</span> <span class="n">y</span> <span class="nb">set</span><span class="o">-</span><span class="n">window</span><span class="o">-</span><span class="n">option</span> <span class="n">synchronize</span><span class="o">-</span><span class="n">panes</span>
+
+<span class="c1"># List of plugins</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="nd">@plugin</span> <span class="s1">&#39;tmux-plugins/tpm&#39;</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="nd">@plugin</span> <span class="s1">&#39;tmux-plugins/tmux-sensible&#39;</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="nd">@plugin</span> <span class="s1">&#39;tmux-plugins/tmux-resurrect&#39;</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="nd">@plugin</span> <span class="s1">&#39;tmux-plugins/tmux-continuum&#39;</span>
+
+<span class="c1">#OTHER OPTION</span>
+<span class="c1"># for vim</span>
+<span class="nb">set</span> <span class="o">-</span><span class="n">g</span> <span class="nd">@resurrect</span><span class="o">-</span><span class="n">strategy</span><span class="o">-</span><span class="n">vim</span> <span class="s1">&#39;session&#39;</span>
+
+<span class="c1">#set -g @resurrect-save-bash-history &#39;on&#39;</span>
+
+<span class="c1"># Other examples:</span>
+<span class="c1"># set -g @plugin &#39;github_username/plugin_name&#39;</span>
+<span class="c1"># set -g @plugin &#39;git@github.com/user/plugin&#39;</span>
+<span class="c1"># set -g @plugin &#39;git@bitbucket.com/user/plugin&#39;</span>
+
+<span class="c1"># Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)</span>
+<span class="n">run</span> <span class="s1">&#39;~/.tmux/plugins/tpm/tpm&#39;</span>
+
+</pre></div>
+</div>
+</div>
+<div class="section" id="tasks">
+<h3>Tasks<a class="headerlink" href="#tasks" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="n">apt</span> <span class="n">terminal</span> <span class="n">packates</span>
+  <span class="n">apt</span><span class="p">:</span>
+    <span class="n">name</span><span class="p">:</span> <span class="s2">&quot;{{ item }}&quot;</span>
+    <span class="n">state</span><span class="p">:</span> <span class="n">present</span>
+  <span class="n">with_items</span><span class="p">:</span>
+    <span class="o">-</span> <span class="n">tmux</span>
+    <span class="o">-</span> <span class="n">tmuxinator</span>
+
+<span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="n">add</span> <span class="n">tmux</span> <span class="n">config</span>
+  <span class="n">copy</span><span class="p">:</span>
+    <span class="n">src</span><span class="p">:</span> <span class="n">tmux</span><span class="o">.</span><span class="n">config</span>
+    <span class="n">dest</span><span class="p">:</span> <span class="s1">&#39;{{ user_config }}/.tmux.conf&#39;</span>
+
+
+<span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="n">Create</span> <span class="n">symbolic</span> <span class="n">link</span>
+  <span class="n">file</span><span class="p">:</span>
+   <span class="n">src</span><span class="p">:</span> <span class="s1">&#39;{{ user_config }}/.tmux.conf&#39;</span>
+   <span class="n">dest</span><span class="p">:</span> <span class="s1">&#39;{{ home_path }}/.tmux.conf&#39;</span>
+   <span class="n">state</span><span class="p">:</span> <span class="n">link</span>
+   <span class="n">force</span><span class="p">:</span> <span class="n">yes</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="output">
+<h3>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ ansible-playbook playbooks/terminal.yml
+
+PLAY <span class="o">[</span>install and config terminal<span class="o">]</span> *************************************************************************************************************************************************************************
+
+TASK <span class="o">[</span>Gathering Facts<span class="o">]</span> *************************************************************************************************************************************************************************************
+ok: <span class="o">[</span>localhost<span class="o">]</span>
+
+TASK <span class="o">[</span>terminal : apt terminal packates<span class="o">]</span> ********************************************************************************************************************************************************************
+changed: <span class="o">[</span>localhost<span class="o">]</span> <span class="o">=</span>&gt; <span class="o">(</span><span class="nv">item</span><span class="o">=[</span>u<span class="s1">&#39;tmux&#39;</span>, u<span class="s1">&#39;tmuxinator&#39;</span><span class="o">])</span>
+
+TASK <span class="o">[</span>terminal : add tmux config<span class="o">]</span> **************************************************************************************************************************************************************************
+changed: <span class="o">[</span>localhost<span class="o">]</span>
+
+TASK <span class="o">[</span>terminal : Create symbolic link<span class="o">]</span> *********************************************************************************************************************************************************************
+ok: <span class="o">[</span>localhost<span class="o">]</span>
+
+PLAY RECAP *************************************************************************************************************************************************************************************************
+localhost                  : <span class="nv">ok</span><span class="o">=</span><span class="m">4</span>    <span class="nv">changed</span><span class="o">=</span><span class="m">2</span>    <span class="nv">unreachable</span><span class="o">=</span><span class="m">0</span>    <span class="nv">failed</span><span class="o">=</span><span class="m">0</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">File pozwala na kopiowanie plików w dowolne miejsce, między innymi konfigów. <a class="reference external" href="https://docs.ansible.com/ansible/2.5/modules/file_module.html">file</a></p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="git.html" class="btn btn-neutral float-right" title="Team spirit" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="editors.html" class="btn btn-neutral" title="Romantyk" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Paweł Kopka.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
