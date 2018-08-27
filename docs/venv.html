@@ -1,0 +1,324 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Ekolog &mdash; Ansible w każdej kuchni  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Marzyciel" href="clouds.html" />
+    <link rel="prev" title="Budowniczy" href="projects.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Ansible w każdej kuchni
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Agenda:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="autor.html">Trochę o mnie</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ansible.html">Ansible</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terminologia.html">Terminologia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jak_dziala.html">Jak działa Ansible?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="do_czego_sluzy.html">Do czego służy Ansible?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python.html">Napiszmy historię</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bashrc.html">Leń</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editors.html">Romantyk</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terminal.html">Terminator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git.html">Team spirit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="projects.html">Budowniczy</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Ekolog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#rola-venv">Rola: Venv</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="clouds.html">Marzyciel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="koniec.html">Robo-leń</a></li>
+<li class="toctree-l1"><a class="reference internal" href="podsumowanie.html">Podsumowanie</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Ansible w każdej kuchni</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Ekolog</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/venv.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ekolog">
+<h1>Ekolog<a class="headerlink" href="#ekolog" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="_images/tox.png"><img alt="alternate text" class="align-right" src="_images/tox.png" style="width: 190.0px; height: 190.0px;" /></a>
+<p>Marian nie lubi toksycznego środowiska, dlatego dla każdego projektu tworzy wirtualne środowisko.
+Żeby mieć przyjazne i czyste zależności, w końcu “u Niego działa”.</p>
+<div class="section" id="rola-venv">
+<h2>Rola: Venv<a class="headerlink" href="#rola-venv" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">roles/</span>
+   <span class="l l-Scalar l-Scalar-Plain">projects/</span>
+     <span class="l l-Scalar l-Scalar-Plain">tasks/</span>
+         <span class="l l-Scalar l-Scalar-Plain">main.yml</span>
+         <span class="l l-Scalar l-Scalar-Plain">check_and_install.yml</span>
+</pre></div>
+</div>
+<div class="section" id="tasks">
+<h3>Tasks<a class="headerlink" href="#tasks" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">---</span>
+<span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="n">check</span> <span class="ow">and</span> <span class="n">install</span> <span class="n">req</span>
+  <span class="n">include</span><span class="p">:</span> <span class="n">check_and_install</span><span class="o">.</span><span class="n">yml</span>
+  <span class="n">with_items</span><span class="p">:</span> <span class="s1">&#39;{{ projects }}&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">---</span>
+<span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="nb">set</span> <span class="n">project</span> <span class="nb">dir</span>
+  <span class="n">set_fact</span><span class="p">:</span>
+    <span class="n">project_dir</span><span class="p">:</span> <span class="s1">&#39;{{ home_path }}/projects/{{ item.split(&quot;/&quot;)[-1] }}&#39;</span>
+
+<span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="s1">&#39;name check if req exists in {{ project_dir }}&#39;</span>
+  <span class="n">stat</span><span class="p">:</span>
+    <span class="n">path</span><span class="p">:</span> <span class="s1">&#39;{{ project_dir}}/requirements.txt&#39;</span>
+  <span class="n">register</span><span class="p">:</span> <span class="n">req</span>
+
+<span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="s1">&#39;create virtualenv&#39;</span>
+  <span class="n">shell</span><span class="p">:</span> <span class="s1">&#39;sudo python3.6 -m venv {{ project_dir }}/venv&#39;</span>
+  <span class="n">when</span><span class="p">:</span> <span class="n">req</span><span class="o">.</span><span class="n">stat</span><span class="o">.</span><span class="n">exists</span> <span class="o">==</span> <span class="kc">True</span>
+
+<span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="s1">&#39;install {{ project_dir }}/requirements.txt&#39;</span>
+  <span class="n">pip</span><span class="p">:</span>
+    <span class="n">requirements</span><span class="p">:</span> <span class="s1">&#39;{{ project_dir }}/requirements.txt&#39;</span>
+    <span class="n">virtualenv</span><span class="p">:</span> <span class="s1">&#39;{{ project_dir }}/venv&#39;</span>
+  <span class="n">when</span><span class="p">:</span> <span class="n">req</span><span class="o">.</span><span class="n">stat</span><span class="o">.</span><span class="n">exists</span> <span class="o">==</span> <span class="kc">True</span>
+
+</pre></div>
+</div>
+</div>
+<div class="section" id="output">
+<h3>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ansible-playbook playbooks/venv.yml
+
+PLAY <span class="o">[</span>create projects venv<span class="o">]</span> **************************************************************************************************************************
+
+TASK <span class="o">[</span>Gathering Facts<span class="o">]</span> *******************************************************************************************************************************
+ok: <span class="o">[</span>localhost<span class="o">]</span>
+
+TASK <span class="o">[</span>venv : check and install req<span class="o">]</span> ******************************************************************************************************************
+included: /home/kepok/projekty/workplace/playbooks/roles/venv/tasks/check_and_install.yml <span class="k">for</span> localhost
+included: /home/kepok/projekty/workplace/playbooks/roles/venv/tasks/check_and_install.yml <span class="k">for</span> localhost
+
+TASK <span class="o">[</span>venv : <span class="nb">set</span> project dir<span class="o">]</span> ************************************************************************************************************************
+ok: <span class="o">[</span>localhost<span class="o">]</span>
+
+TASK <span class="o">[</span>venv : name check <span class="k">if</span> req exists in /home/kepok/projects/workplace<span class="o">]</span> *****************************************************************************
+ok: <span class="o">[</span>localhost<span class="o">]</span>
+
+TASK <span class="o">[</span>venv : create virtualenv<span class="o">]</span> **********************************************************************************************************************
+skipping: <span class="o">[</span>localhost<span class="o">]</span>
+
+TASK <span class="o">[</span>venv : install /home/kepok/projects/workplace/requirements.txt<span class="o">]</span> ********************************************************************************
+skipping: <span class="o">[</span>localhost<span class="o">]</span>
+
+TASK <span class="o">[</span>venv : <span class="nb">set</span> project dir<span class="o">]</span> ************************************************************************************************************************
+ok: <span class="o">[</span>localhost<span class="o">]</span>
+
+TASK <span class="o">[</span>venv : name check <span class="k">if</span> req exists in /home/kepok/projects/SimpleMonitoring<span class="o">]</span> **********************************************************************
+ok: <span class="o">[</span>localhost<span class="o">]</span>
+
+TASK <span class="o">[</span>venv : create virtualenv<span class="o">]</span> **********************************************************************************************************************
+changed: <span class="o">[</span>localhost<span class="o">]</span>
+
+TASK <span class="o">[</span>venv : install /home/kepok/projects/SimpleMonitoring/requirements.txt<span class="o">]</span> *************************************************************************
+changed: <span class="o">[</span>localhost<span class="o">]</span>
+
+PLAY RECAP *******************************************************************************************************************************************
+localhost                  : <span class="nv">ok</span><span class="o">=</span><span class="m">9</span>    <span class="nv">changed</span><span class="o">=</span><span class="m">2</span>    <span class="nv">unreachable</span><span class="o">=</span><span class="m">0</span>    <span class="nv">failed</span><span class="o">=</span><span class="m">0</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Include pozwala na użycie taksów lub playbooków wewnątrz innego tasku <a class="reference external" href="https://docs.ansible.com/ansible/2.5/modules/include_module.html">include</a></p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="clouds.html" class="btn btn-neutral float-right" title="Marzyciel" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="projects.html" class="btn btn-neutral" title="Budowniczy" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Paweł Kopka.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,335 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Napiszmy historię &mdash; Ansible w każdej kuchni  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Leń" href="bashrc.html" />
+    <link rel="prev" title="Do czego służy Ansible?" href="do_czego_sluzy.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Ansible w każdej kuchni
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Agenda:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="autor.html">Trochę o mnie</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ansible.html">Ansible</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terminologia.html">Terminologia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jak_dziala.html">Jak działa Ansible?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="do_czego_sluzy.html">Do czego służy Ansible?</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Napiszmy historię</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bohater">Bohater</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rola-python">Rola: Python</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bashrc.html">Leń</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editors.html">Romantyk</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terminal.html">Terminator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git.html">Team spirit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="projects.html">Budowniczy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="venv.html">Ekolog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clouds.html">Marzyciel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="koniec.html">Robo-leń</a></li>
+<li class="toctree-l1"><a class="reference internal" href="podsumowanie.html">Podsumowanie</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Ansible w każdej kuchni</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Napiszmy historię</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/python.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="napiszmy-historie">
+<h1>Napiszmy historię<a class="headerlink" href="#napiszmy-historie" title="Permalink to this headline">¶</a></h1>
+<p>Playbooki powinny być jaki historia, pełna dobrze odegranych ról.</p>
+<div class="section" id="bohater">
+<h2>Bohater<a class="headerlink" href="#bohater" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="marian">
+<h3>Marian<a class="headerlink" href="#marian" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="_images/edu.png"><img alt="alternate text" class="align-right" src="_images/edu.png" style="width: 111.0px; height: 133.5px;" /></a>
+<a class="reference internal image-reference" href="_images/hipis.png"><img alt="alternate text" class="align-right" src="_images/hipis.png" style="width: 133.0px; height: 133.0px;" /></a>
+<p>Marian jest hipisem, dlatego nie przepada za statycznym typowaniem. Jest też dorosły i odpowiedzialny. Dlatego Python będzie świetnym dla niego.</p>
+</div>
+</div>
+<div class="section" id="rola-python">
+<h2>Rola: Python<a class="headerlink" href="#rola-python" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">roles/</span>
+   <span class="l l-Scalar l-Scalar-Plain">python/</span>
+     <span class="l l-Scalar l-Scalar-Plain">tasks/</span>
+         <span class="l l-Scalar l-Scalar-Plain">main.yml</span>
+     <span class="l l-Scalar l-Scalar-Plain">defaults/</span>
+         <span class="l l-Scalar l-Scalar-Plain">main.yml</span>
+</pre></div>
+</div>
+<div class="section" id="defaults">
+<h3>Defaults<a class="headerlink" href="#defaults" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python_version</span><span class="p">:</span> <span class="mf">3.6</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="tasks">
+<h3>Tasks<a class="headerlink" href="#tasks" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">---</span>
+
+<span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="n">Add</span> <span class="n">latest</span> <span class="n">Python</span>
+  <span class="n">apt_repository</span><span class="p">:</span>
+    <span class="n">repo</span><span class="p">:</span> <span class="s2">&quot;ppa:jonathonf/python-{{ python_version }}&quot;</span>
+    <span class="n">state</span><span class="p">:</span> <span class="n">present</span>
+  <span class="n">when</span><span class="p">:</span> <span class="n">ansible_distribution</span> <span class="o">==</span> <span class="s1">&#39;Ubuntu&#39;</span> <span class="ow">and</span> <span class="n">ansible_distribution_version</span> <span class="o">!=</span> <span class="s1">&#39;18.04&#39;</span>
+
+<span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="n">install</span> <span class="n">Python</span> <span class="k">with</span> <span class="n">dev</span>
+  <span class="n">apt</span><span class="p">:</span>
+    <span class="n">name</span><span class="p">:</span> <span class="s2">&quot;{{ item }}&quot;</span>
+    <span class="n">state</span><span class="p">:</span> <span class="n">present</span>
+  <span class="n">with_items</span><span class="p">:</span>
+      <span class="o">-</span> <span class="s2">&quot;python{{ python_version }}&quot;</span>
+      <span class="o">-</span> <span class="s2">&quot;python-dev&quot;</span>
+      <span class="o">-</span> <span class="s2">&quot;python{{ python_version }}-dev&quot;</span>
+      <span class="o">-</span> <span class="s2">&quot;python{{ python_version }}-venv&quot;</span>
+
+<span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="n">install</span> <span class="n">Pip</span>
+  <span class="n">apt</span><span class="p">:</span>
+    <span class="n">name</span><span class="p">:</span> <span class="s2">&quot;{{ item }}&quot;</span>
+    <span class="n">state</span><span class="p">:</span> <span class="n">present</span>
+  <span class="n">with_items</span><span class="p">:</span>
+      <span class="o">-</span> <span class="n">python</span><span class="o">-</span><span class="n">pip</span>
+      <span class="o">-</span> <span class="n">python3</span><span class="o">-</span><span class="n">pip</span>
+
+<span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="n">install</span> <span class="n">Venv</span> <span class="k">for</span> <span class="n">python3</span>
+  <span class="n">apt</span><span class="p">:</span>
+    <span class="n">name</span><span class="p">:</span> <span class="s2">&quot;python{{ python_version }}-venv&quot;</span>
+    <span class="n">state</span><span class="p">:</span> <span class="n">present</span>
+
+<span class="o">-</span> <span class="n">name</span><span class="p">:</span> <span class="n">install</span> <span class="n">Venv</span> <span class="k">for</span> <span class="n">python2</span>
+  <span class="n">pip</span><span class="p">:</span>
+    <span class="n">name</span><span class="p">:</span> <span class="s2">&quot;virtualenv&quot;</span>
+    <span class="n">state</span><span class="p">:</span> <span class="n">present</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="output">
+<h3>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ ansible-playbook playbooks/python.yml
+
+PLAY <span class="o">[</span>install and config python<span class="o">]</span> ***************************************************************************************************************************************************************************
+
+TASK <span class="o">[</span>Gathering Facts<span class="o">]</span> *************************************************************************************************************************************************************************************
+ok: <span class="o">[</span>localhost<span class="o">]</span>
+
+TASK <span class="o">[</span>python : Add latest Python<span class="o">]</span> **************************************************************************************************************************************************************************
+skipping: <span class="o">[</span>localhost<span class="o">]</span>
+
+TASK <span class="o">[</span>python : install Python with dev<span class="o">]</span> ********************************************************************************************************************************************************************
+changed: <span class="o">[</span>localhost<span class="o">]</span> <span class="o">=</span>&gt; <span class="o">(</span><span class="nv">item</span><span class="o">=[</span>u<span class="s1">&#39;python3.6&#39;</span>, u<span class="s1">&#39;python-dev&#39;</span>, u<span class="s1">&#39;python3.6-dev&#39;</span>, u<span class="s1">&#39;python3.6-venv&#39;</span><span class="o">])</span>
+
+TASK <span class="o">[</span>python : install Pip<span class="o">]</span> ********************************************************************************************************************************************************************************
+changed: <span class="o">[</span>localhost<span class="o">]</span> <span class="o">=</span>&gt; <span class="o">(</span><span class="nv">item</span><span class="o">=[</span>u<span class="s1">&#39;python-pip&#39;</span>, u<span class="s1">&#39;python3-pip&#39;</span><span class="o">])</span>
+
+TASK <span class="o">[</span>python : install Venv <span class="k">for</span> python3<span class="o">]</span> *******************************************************************************************************************************************************************
+ok: <span class="o">[</span>localhost<span class="o">]</span>
+
+TASK <span class="o">[</span>python : install Venv <span class="k">for</span> python2<span class="o">]</span> *******************************************************************************************************************************************************************
+ok: <span class="o">[</span>localhost<span class="o">]</span>
+
+PLAY RECAP *************************************************************************************************************************************************************************************************
+localhost                  : <span class="nv">ok</span><span class="o">=</span><span class="m">5</span>    <span class="nv">changed</span><span class="o">=</span><span class="m">2</span>    <span class="nv">unreachable</span><span class="o">=</span><span class="m">0</span>    <span class="nv">failed</span><span class="o">=</span><span class="m">0</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Apt jest, jak każdy widzi. <a class="reference external" href="https://docs.ansible.com/ansible/latest/modules/apt_module.html">apt</a></p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bashrc.html" class="btn btn-neutral float-right" title="Leń" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="do_czego_sluzy.html" class="btn btn-neutral" title="Do czego służy Ansible?" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Paweł Kopka.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

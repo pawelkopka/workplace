@@ -1,0 +1,268 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Robo-leń &mdash; Ansible w każdej kuchni  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Podsumowanie" href="podsumowanie.html" />
+    <link rel="prev" title="Marzyciel" href="clouds.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Ansible w każdej kuchni
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Agenda:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="autor.html">Trochę o mnie</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ansible.html">Ansible</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terminologia.html">Terminologia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jak_dziala.html">Jak działa Ansible?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="do_czego_sluzy.html">Do czego służy Ansible?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python.html">Napiszmy historię</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bashrc.html">Leń</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editors.html">Romantyk</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terminal.html">Terminator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git.html">Team spirit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="projects.html">Budowniczy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="venv.html">Ekolog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clouds.html">Marzyciel</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Robo-leń</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#playbook">Playbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#output">Output</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="podsumowanie.html">Podsumowanie</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Ansible w każdej kuchni</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Robo-leń</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/koniec.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="robo-len">
+<h1>Robo-leń<a class="headerlink" href="#robo-len" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="_images/robo.png"><img alt="alternate text" class="align-right" src="_images/robo.png" style="width: 144.0px; height: 144.0px;" /></a>
+<p>Marian lubi automatyzacje. Dlatego wkłada wiele ról w jeden playbook.</p>
+<div class="section" id="playbook">
+<h2>Playbook<a class="headerlink" href="#playbook" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">import_playbook</span><span class="p">:</span> <span class="n">install_python</span><span class="o">.</span><span class="n">yml</span>
+<span class="o">-</span> <span class="n">import_playbook</span><span class="p">:</span> <span class="n">bashrc</span><span class="o">.</span><span class="n">yml</span>
+<span class="o">-</span> <span class="n">import_playbook</span><span class="p">:</span> <span class="n">terminal</span><span class="o">.</span><span class="n">yml</span>
+<span class="o">-</span> <span class="n">import_playbook</span><span class="p">:</span> <span class="n">git</span><span class="o">.</span><span class="n">yml</span>
+<span class="o">-</span> <span class="n">import_playbook</span><span class="p">:</span> <span class="n">python</span><span class="o">.</span><span class="n">yml</span>
+<span class="o">-</span> <span class="n">import_playbook</span><span class="p">:</span> <span class="n">editors</span><span class="o">.</span><span class="n">yml</span>
+<span class="o">-</span> <span class="n">import_playbook</span><span class="p">:</span> <span class="n">projects</span><span class="o">.</span><span class="n">yml</span>
+<span class="o">-</span> <span class="n">import_playbook</span><span class="p">:</span> <span class="n">venv</span><span class="o">.</span><span class="n">yml</span>
+<span class="o">-</span> <span class="n">import_playbook</span><span class="p">:</span> <span class="n">clouds</span><span class="o">.</span><span class="n">yml</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="output">
+<h2>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span> $ <span class="nb">time</span> ansible-playbook playbooks/deploy.yml --ask-vault-pass
+
+.....
+
+PLAY RECAP *************************************************************************************************************************************************************************************************
+<span class="m">34</span>.250.28.34               : <span class="nv">ok</span><span class="o">=</span><span class="m">48</span>   <span class="nv">changed</span><span class="o">=</span><span class="m">30</span>   <span class="nv">unreachable</span><span class="o">=</span><span class="m">0</span>    <span class="nv">failed</span><span class="o">=</span><span class="m">0</span>
+
+real    4m23.447s
+user    0m26.480s
+sys     0m6.276s
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="podsumowanie.html" class="btn btn-neutral float-right" title="Podsumowanie" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="clouds.html" class="btn btn-neutral" title="Marzyciel" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Paweł Kopka.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

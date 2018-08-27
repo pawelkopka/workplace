@@ -1,0 +1,336 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Jak działa Ansible? &mdash; Ansible w każdej kuchni  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Do czego służy Ansible?" href="do_czego_sluzy.html" />
+    <link rel="prev" title="Terminologia" href="terminologia.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Ansible w każdej kuchni
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Agenda:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="autor.html">Trochę o mnie</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ansible.html">Ansible</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terminologia.html">Terminologia</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Jak działa Ansible?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#tworzymy-inventory">Tworzymy inventory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pierwszy-ping">Pierwszy Ping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#instalowanie-pythona-bez-pythona">Instalowanie Pythona bez Pythona</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#drugi-ping">Drugi Ping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#jak-dokladnie-dziala-ansible">Jak dokładnie działa ansible</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tymczasem-na-zdalnej-maszynie">Tymczasem na zdalnej maszynie</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="do_czego_sluzy.html">Do czego służy Ansible?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python.html">Napiszmy historię</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bashrc.html">Leń</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editors.html">Romantyk</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terminal.html">Terminator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git.html">Team spirit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="projects.html">Budowniczy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="venv.html">Ekolog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clouds.html">Marzyciel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="koniec.html">Robo-leń</a></li>
+<li class="toctree-l1"><a class="reference internal" href="podsumowanie.html">Podsumowanie</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Ansible w każdej kuchni</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Jak działa Ansible?</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/jak_dziala.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="jak-dziala-ansible">
+<h1>Jak działa Ansible?<a class="headerlink" href="#jak-dziala-ansible" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="tworzymy-inventory">
+<h2>Tworzymy inventory<a class="headerlink" href="#tworzymy-inventory" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">test</span><span class="p">]</span>
+<span class="mf">34.245</span><span class="o">.</span><span class="mf">217.152</span>
+<span class="p">[</span><span class="n">test</span><span class="p">:</span><span class="nb">vars</span><span class="p">]</span>
+<span class="n">ansible_user</span><span class="o">=</span><span class="n">ubuntu</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="pierwszy-ping">
+<h2>Pierwszy Ping<a class="headerlink" href="#pierwszy-ping" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ ansible <span class="nb">test</span> -m ping
+
+<span class="m">34</span>.245.217.152 <span class="p">|</span> FAILED! <span class="o">=</span>&gt; <span class="o">{</span>
+ <span class="s2">&quot;changed&quot;</span>: false,
+ <span class="s2">&quot;module_stderr&quot;</span>: <span class="s2">&quot;Shared connection to 34.245.217.152 closed.\r\n&quot;</span>,
+ <span class="s2">&quot;module_stdout&quot;</span>: <span class="s2">&quot;/bin/sh: 1: /usr/bin/python: not found\r\n&quot;</span>,
+ <span class="s2">&quot;msg&quot;</span>: <span class="s2">&quot;MODULE FAILURE&quot;</span>,
+ <span class="s2">&quot;rc&quot;</span>: <span class="m">127</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Moduł ping służy do sprawdzania, czy zdalny host jest osiągalny <a class="reference external" href="https://docs.ansible.com/ansible/latest/modules/ping_module.html">ping</a></p>
+</div>
+</div>
+<div class="section" id="instalowanie-pythona-bez-pythona">
+<h2>Instalowanie Pythona bez Pythona<a class="headerlink" href="#instalowanie-pythona-bez-pythona" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ ansible <span class="nb">test</span> -m raw -a <span class="s1">&#39;sudo apt -y update &amp;&amp; sudo apt install -y python-minimal&#39;</span>
+<span class="m">34</span>.245.217.152 <span class="p">|</span> SUCCESS <span class="p">|</span> <span class="nv">rc</span><span class="o">=</span><span class="m">0</span> &gt;&gt;
+Hit:1 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu xenial InRelease
+Get:2 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu xenial-updates InRelease <span class="o">[</span><span class="m">109</span> kB<span class="o">]</span>
+Get:3 http://eu-west-1.ec2.archive.ubuntu.com/ubuntu xenial-backports InRelease <span class="o">[</span><span class="m">107</span> kB<span class="o">]</span>
+Get:4 http://security.ubuntu.com/ubuntu xenial-security InRelease <span class="o">[</span><span class="m">107</span> kB<span class="o">]</span>
+....
+Setting up libpython-stdlib:amd64 <span class="o">(</span><span class="m">2</span>.7.12-1~16.04<span class="o">)</span> ...
+Setting up python <span class="o">(</span><span class="m">2</span>.7.12-1~16.04<span class="o">)</span> ...
+Shared connection to <span class="m">34</span>.245.217.152 closed.
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Moduł raw nie wymaga Python. Wykonuje polecanie bezpośrednio w shellu <a class="reference external" href="https://docs.ansible.com/ansible/2.6/modules/raw_module.html">raw</a></p>
+</div>
+</div>
+<div class="section" id="drugi-ping">
+<h2>Drugi Ping<a class="headerlink" href="#drugi-ping" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ ansible  <span class="nb">test</span> -m ping
+ <span class="m">34</span>.245.217.152 <span class="p">|</span> <span class="nv">SUCCESS</span> <span class="o">=</span>&gt; <span class="o">{</span>
+     <span class="s2">&quot;changed&quot;</span>: false,
+     <span class="s2">&quot;ping&quot;</span>: <span class="s2">&quot;pong&quot;</span>
+ <span class="o">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="jak-dokladnie-dziala-ansible">
+<h2>Jak dokładnie działa ansible<a class="headerlink" href="#jak-dokladnie-dziala-ansible" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ ansible -i inv_test.ini all -m <span class="nb">command</span> -a <span class="s1">&#39;pwd ; sleep 30&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="tymczasem-na-zdalnej-maszynie">
+<h2>Tymczasem na zdalnej maszynie<a class="headerlink" href="#tymczasem-na-zdalnej-maszynie" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>root@ip-172-31-9-154:/tmp# ls
+ansible_r9RBDI
+
+root@ip-172-31-9-154:/tmp# cd ansible_r9RBDI/
+
+root@ip-172-31-9-154:/tmp/ansible_r9RBDI# ls
+ansible_modlib.zip  ansible_module_command.py
+
+root@ip-172-31-9-154:/tmp/ansible_r9RBDI# cat ansible_module_command.py
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+# Copyright: (c) 2012, Michael DeHaan &lt;michael.dehaan@gmail.com&gt;, and others
+# Copyright: (c) 2016, Toshio Kuratomi &lt;tkuratomi@ansible.com&gt;
+#
+# GNU General Public License v3.0+ (see COPYING or https://www.gnu.org/licenses/gpl-3.0.txt)
+
+from __future__ import absolute_import, division, print_function
+__metaclass__ = type
+
+ANSIBLE_METADATA = {&#39;metadata_version&#39;: &#39;1.1&#39;,
+                    &#39;status&#39;: [&#39;stableinterface&#39;],
+                    &#39;supported_by&#39;: &#39;core&#39;}
+
+DOCUMENTATION = &#39;&#39;&#39;
+---
+module: command
+short_description: Executes a command on a remote node
+version_added: historical
+...
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="do_czego_sluzy.html" class="btn btn-neutral float-right" title="Do czego służy Ansible?" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="terminologia.html" class="btn btn-neutral" title="Terminologia" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Paweł Kopka.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
