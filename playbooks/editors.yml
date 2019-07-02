@@ -1,5 +1,6 @@
 - name: install pycharm
-  hosts: all
+  hosts: localhost
+  connection: local
   roles:
     - editors
   become: true

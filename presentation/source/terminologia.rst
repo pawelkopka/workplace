@@ -51,7 +51,8 @@ Orkiestracja zadań, konfiguracji oraz deploymentu.
 
 .. code-block:: yaml
 
-   - hosts: all
+   - hosts: localhost
+  connection: local
      tasks:
       - name: ensure nginx is at the latest version
         apt:

@@ -6,4 +6,4 @@
 - import_playbook: editors.yml
 - import_playbook: projects.yml
 - import_playbook: venv.yml
-- import_playbook: clouds.yml
+

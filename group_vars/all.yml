@@ -1,8 +1,8 @@
-username: ubuntu
+username: root
 home_path: "/home/{{ username }}"
 user_config: "{{ home_path }}/.config/{{ username}}_config"
 git_name: marian
 git_email: marian_pyconpl@gmail.com
 projects:
   - https://github.com/pawelkopka/workplace
-  - https://github.com/pawelkopka/SimpleMonitoring
+

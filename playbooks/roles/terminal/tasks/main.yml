@@ -1,20 +1,36 @@
-- name: apt terminal packates
-  apt:
-    name: "{{ item }}"
+#- name: Add repo for hstr
+#  apt_repository:
+#    repo: "ppa:ultradvorka/ppa"
+#    state: present
+#
+#- name: apt terminal packates
+#  apt:
+#    name: "{{ item }}"
+#    state: present
+#  with_items:
+#    - tmux
+#    - tmuxinator
+#    - hstr
+- name: get hstr config
+  shell: hstr --show-configuration
+  register: hstr_config
+
+- name: add hstr config to bashrc
+  lineinfile:
+    path: "{{ home_path }}/.bashrc"
+    line: "{{ item }}"
     state: present
-  with_items:
-    - tmux
-    - tmuxinator
+  with_items: "{{ hstr_config.stdout }}"
 
-- name: add tmux config
-  copy:
-    src: tmux.config
-    dest: '{{ user_config }}/.tmux.conf'
-
-
-- name: Create symbolic link
-  file:
-   src: '{{ user_config }}/.tmux.conf'
-   dest: '{{ home_path }}/.tmux.conf'
-   state: link
-   force: yes
+#- name: add tmux config
+#  copy:
+#    src: tmux.config
+#    dest: '{{ user_config }}/.tmux.conf'
+#
+#
+#- name: Create symbolic link
+#  file:
+#   src: '{{ user_config }}/.tmux.conf'
+#   dest: '{{ home_path }}/.tmux.conf'
+#   state: link
+#   force: yes
